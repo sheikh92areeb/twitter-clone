@@ -1,0 +1,24 @@
+{
+  "name": "project-03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheikh92areeb/twitter-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheikh92areeb/twitter-clone/issues"
+  },
+  "homepage": "https://github.com/sheikh92areeb/twitter-clone#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.16",
+    "tailwindcss": "^4.0.16"
+  }
+}
