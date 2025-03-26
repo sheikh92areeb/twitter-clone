@@ -10,7 +10,7 @@
 
 <body class="bg-black text-white">
     <div class="flex container mx-auto">
-        <div class="first w-[50%]">
+        <div class="first w-fit">
             <div class="logo invert my-4 w-full px-14">
                 <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
                     <g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g>
@@ -18,17 +18,20 @@
             </div>
 
             <div class="sidebar flex">
-                <ul class="flex flex-col space-y-1 px-9 font-bold">
-                    <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl">home</span> Home</li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl">search</span> Explore</li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl">notifications</span> Notification</li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl">chat</span> Grok</li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl">list</span> Lists</li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl">bookmarks</span> Bookmarks</li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl">communities</span> Communities</li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl">box</span> Premium</li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl">person</span> Profile</li>
-                    <li class="flex justify-start items-center gap-3 w-fit px-5 py-3 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl">more</span> More</li>
+                <ul class="flex flex-col px-9 font-bold space-y-1">
+                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl!">home</span> Home</li>
+                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl!">search</span> Explore</li>
+                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl!">notifications</span> Notification</li>
+                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl!">chat</span> Grok</li>
+                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl!">list</span> Lists</li>
+                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl!">bookmarks</span> Bookmarks</li>
+                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl!">communities</span> Communities</li>
+                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl!">box</span> Premium</li>
+                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl!">person</span> Profile</li>
+                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><span class="material-symbols-outlined text-xl!">more</span> More</li>
+                    <li>
+                        <button class="bg-blue-600 text-white text-sm px-15 py-2 rounded-full cursor-pointer">Post</button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -38,7 +41,35 @@
                 <div class="letf w-1/2 font-bold flex justify-center items-center cursor-pointer py-3 hover:bg-gray-800 relative">For You <span class="absolute bg-blue-500 h-1 w-16 bottom-0 rounded-full"></span> </div>
                 <div class="right w-1/2 font-bold flex justify-center items-center cursor-pointer py-3 hover:bg-gray-800">Following</div>
                 <div class="setting px-2 cursor-pointer flex justify-center items-center"><span class="material-symbols-outlined">settings</span></div>
-            </div>            
+            </div>
+            
+            <div class="whatishap flex gap-5 p-3 border-b-[1px] border-gray-400">
+                <div class="img w-12 h-10 rounded-full m-2">
+                    <img src="cover.jpg" alt="Profile" class="rounded-full w-full h-full">
+                </div>
+                <div class="w-full">
+                    <input type="text" placeholder="What's Happening?" class="w-full bg-black text-white text-lg outline-0 my-2">
+                    <div class="flex gap-2 items-center text-blue-600 text-[14px] my-2">
+                        <span class="text-[16px]! material-symbols-outlined">globe_asia</span>
+                        Everyone can Reply
+                    </div>
+                    <div class="diveder h-[0.2px] w-[90%] bg-gray-700"></div>
+                    <div class="w-[90%] my-2 flex justify-between">
+                        <div class="blue-icons text-blue-600 flex gap-2">
+                            <span class="material-symbols-outlined cursor-pointer text-[16px]!">image</span>
+                            <span class="material-symbols-outlined cursor-pointer text-[16px]!">gif</span>
+                            <span class="material-symbols-outlined cursor-pointer text-[16px]!">ballot</span>
+                            <span class="material-symbols-outlined cursor-pointer text-[16px]!">sentiment_satisfied</span>
+                            <span class="material-symbols-outlined cursor-pointer text-[16px]!">calendar_month</span>
+                            <span class="material-symbols-outlined cursor-pointer text-[16px]!">pin_drop</span>                               
+                        </div>
+                        <div class="btn">
+                            <button class="bg-black text-blue-600 border border-blue-600 text-[12px] px-4 rounded-full cursor-pointer">Post</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
         <div class="third w-[50%]">
