@@ -11,60 +11,76 @@
 <body class="bg-black text-white">
     <div class="flex container justify-center m-auto">
         <div class="first w-fit">
-            <div class="sidebar flex flex-col sticky top-0">
-                <div class="logo invert my-4 w-full lg:px-14">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 m-auto lg:m-0 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
-                        <g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g>
-                    </svg>
+            <div class="sidebar flex flex-col justify-between space-y-4 sticky top-0">
+                <div class="flex flex-col">
+                    <div class="logo invert my-4 w-full lg:px-14">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 m-auto lg:m-0 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                            <g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g>
+                        </svg>
+                    </div>
+    
+                    <ul class="flex flex-col px-2 lg:px-9 font-bold space-y-1">
+                        <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
+                            <span class="material-symbols-outlined text-xl!">home</span> 
+                            <span class="hidden lg:block"> Home</span>
+                        </li>
+                        <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
+                            <span class="material-symbols-outlined text-xl!">search</span> 
+                            <span class="hidden lg:block">Explore </span>
+                        </li>
+                        <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
+                            <span class="material-symbols-outlined text-xl!">notifications</span> 
+                            <span class="hidden lg:block"> Notification </span>
+                        </li>
+                        <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
+                            <span class="material-symbols-outlined text-xl!">chat</span>
+                            <span class="hidden lg:block"> Grok</span>
+                        </li>
+                        <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
+                            <span class="material-symbols-outlined text-xl!">list</span> 
+                            <span class="hidden lg:block">Lists </span>
+                        </li>
+                        <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
+                            <span class="material-symbols-outlined text-xl!">bookmarks</span> 
+                            <span class="hidden lg:block">Bookmarks </span>
+                        </li>
+                        <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
+                            <span class="material-symbols-outlined text-xl!">communities</span> 
+                            <span class="hidden lg:block"> Communities </span>
+                        </li>
+                        <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
+                            <span class="material-symbols-outlined text-xl!">box</span> 
+                            <span class="hidden lg:block">Premium </span>
+                        </li>
+                        <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
+                            <span class="material-symbols-outlined text-xl!">person</span> 
+                            <span class="hidden lg:block">Profile </span>
+                        </li>
+                        <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
+                            <span class="material-symbols-outlined text-xl!">more</span> 
+                            <span class="hidden lg:block"> More</span>
+                        </li>
+                        <li>
+                            <button class="hidden lg:block bg-blue-600 text-white text-sm px-15 py-2 rounded-full cursor-pointer">
+                                Post
+                            </button>
+
+                            <button class="lg:hidden bg-blue-600 text-white text-sm ms-3 px-2 py-1 w-fit rounded-full cursor-pointer">
+                                <span class="material-symbols-outlined text-xl!">stylus_note</span>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
 
-                <ul class="flex flex-col px-2 lg:px-9 font-bold space-y-1">
-                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
-                        <span class="material-symbols-outlined text-xl!">home</span> 
-                        <span class="hidden lg:block"> Home</span>
-                    </li>
-                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
-                        <span class="material-symbols-outlined text-xl!">search</span> 
-                        <span class="hidden lg:block">Explore </span>
-                    </li>
-                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
-                        <span class="material-symbols-outlined text-xl!">notifications</span> 
-                        <span class="hidden lg:block"> Notification </span>
-                    </li>
-                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
-                        <span class="material-symbols-outlined text-xl!">chat</span>
-                        <span class="hidden lg:block"> Grok</span>
-                    </li>
-                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
-                        <span class="material-symbols-outlined text-xl!">list</span> 
-                        <span class="hidden lg:block">Lists </span>
-                    </li>
-                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
-                        <span class="material-symbols-outlined text-xl!">bookmarks</span> 
-                        <span class="hidden lg:block">Bookmarks </span>
-                    </li>
-                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
-                        <span class="material-symbols-outlined text-xl!">communities</span> 
-                        <span class="hidden lg:block"> Communities </span>
-                    </li>
-                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
-                        <span class="material-symbols-outlined text-xl!">box</span> 
-                        <span class="hidden lg:block">Premium </span>
-                    </li>
-                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
-                        <span class="material-symbols-outlined text-xl!">person</span> 
-                        <span class="hidden lg:block">Profile </span>
-                    </li>
-                    <li class="text-sm flex justify-start items-center gap-3 w-fit px-5 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full">
-                        <span class="material-symbols-outlined text-xl!">more</span> 
-                        <span class="hidden lg:block"> More</span>
-                    </li>
-                    <li class="hidden lg:block">
-                        <button class="bg-blue-600 text-white text-sm px-15 py-2 rounded-full cursor-pointer">
-                            Post
-                        </button>
-                    </li>
-                </ul>
+                <div class="w-fit text-sm lg:text-base font-bold cursor-pointer flex items-center gap-2 lg:px-10">                    
+                    <div class="profile-img w-8 h-8">
+                        <img src="cover.jpg" alt="Profile" class="w-full h-full rounded-full" />
+                    </div>
+                    <div class="profile-name">
+                        <div class="font-bold text-sm">Areeba</div>
+                        <div class="text-xs text-gray-500">@areeba</div>
+                    </div>                                        
+                </div>
             </div>
         </div>
 
@@ -285,19 +301,27 @@
                     </div>
                 </div>
 
-                <div class="whats w-full lg:w-[80%] my-3 py-3 lg:py-5 bg-[#16181c] rounded-xl space-y-2 lg:space-y-3">
+                <div class="who w-full lg:w-[80%] my-3 py-3 lg:py-5 bg-[#16181c] rounded-xl space-y-2 lg:space-y-3">
                     <h1 class="text-base lg:text-lg font-bold px-3">Who to Follow</h1>
                     <div class="item py-2 px-3 space-y-3">
-                        <div class="text-sm lg:text-base font-bold cursor-pointer flex justify-between">
-                            Areeb 
-                            <span class="text-xs lg:text-sm bg-white text-black rounded-xl px-3 py-1 hover:bg-black hover:text-white">Follow</span>
+                        <div class="text-sm lg:text-base font-bold cursor-pointer p-2 flex items-center justify-between hover:bg-gray-800 rounded-full">
+                            <div class="left flex items-center gap-2"> 
+                                <div class="profile-img w-10 h-10">
+                                    <img src="cover.jpg" alt="Profile" class="w-full h-full rounded-full" />
+                                </div>
+                                <div class="profile-name">
+                                    <div class="font-bold">Areeba</div>
+                                    <div class="text-xs lg:text-sm text-gray-500">@areeba</div>
+                                </div>
+                            </div>
+
+                            <div class="right">
+                                <span class="text-xs lg:text-sm bg-white text-black rounded-xl px-3 py-1 hover:bg-black hover:text-white">Follow</span>
+                            </div>
                         </div>
-                        <div class="text-sm lg:text-base font-bold cursor-pointer flex justify-between">
-                            Kamran 
-                            <span class="text-xs lg:text-sm bg-white text-black rounded-xl px-3 py-1 hover:bg-black hover:text-white">Follow</span>
-                        </div>
+                        
                     </div>
-                    <div class="mt-3 px-3 text-xs lg:text-sm underline cursor-pointer text-blue-600">Show More</div>
+                    <div class="mt-3 px-3 text-xs lg:text-sm hover:underline cursor-pointer text-blue-600">Show More</div>
                 </div>
             </div>
         </div>
