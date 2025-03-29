@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="./css/output.css" rel="stylesheet">
+    <title>X (Twitter) | Clone | Web Project | Frontend Development | Dev_Arii18</title>
 </head>
 
 <body class="bg-black text-white">
@@ -72,11 +74,11 @@
                     </ul>
                 </div>
 
-                <div class="w-fit text-sm lg:text-base font-bold cursor-pointer flex items-center gap-2 lg:px-10">                    
+                <div class="lg:w-fit w-full text-sm lg:text-base font-bold cursor-pointer flex items-center justify-center lg:justify-start lg:gap-2 lg:px-10">                    
                     <div class="profile-img w-8 h-8">
-                        <img src="cover.jpg" alt="Profile" class="w-full h-full rounded-full" />
+                        <img src="img/cover.jpg" alt="Profile" class="w-full h-full rounded-full" />
                     </div>
-                    <div class="profile-name">
+                    <div class="profile-name hidden lg:block">
                         <div class="font-bold text-sm">Areeba</div>
                         <div class="text-xs text-gray-500">@areeba</div>
                     </div>                                        
@@ -85,7 +87,7 @@
         </div>
 
         <div class="second w-full lg:w-[40%] border-[1px] border-x-gray-600 border-y-black">
-            <div class="top flex border-b-[1px] border-gray-600">
+            <div class="top flex border-b-[1px] border-gray-600 sticky top-0 bg-black backdrop-blur-md opacity-70 z-10">
                 <div class="letf w-1/2 font-bold flex justify-center items-center cursor-pointer py-3 hover:bg-gray-800 relative">
                     For You 
                     <span class="absolute bg-blue-500 h-1 w-16 bottom-0 rounded-full"></span> 
@@ -100,7 +102,7 @@
 
             <div class="whatishap flex gap-5 p-3 border-b-[1px] border-gray-400">
                 <div class="img w-12 h-10 rounded-full m-2">
-                    <img src="cover.jpg" alt="Profile" class="rounded-full w-full h-full">
+                    <img src="img/cover.jpg" alt="Profile" class="rounded-full w-full h-full">
                 </div>
                 <div class="w-full">
                     <input type="text" placeholder="What's Happening?" class="w-full bg-black text-white max-sm:text-sm text-lg outline-0 max-sm:my-1 my-2">
@@ -132,7 +134,7 @@
                 <div class="post p-3 border-b border-gray-600">
                     <div class="post-header flex gap-3 px-3">
                         <div class="img w-12 h-10 rounded-full m-2">
-                            <img src="cover.jpg" alt="Profile" class="rounded-full w-full h-full">
+                            <img src="img/cover.jpg" alt="Profile" class="rounded-full w-full h-full">
                         </div>
                         <div class="w-full">
                             <div class="flex justify-between">
@@ -145,13 +147,13 @@
                                 <div class="setting cursor-pointer">
                                     <span class="material-symbols-outlined">more_horiz</span>
                                 </div>
-                            </div>
-                            <div class="text-gray-400">This is a test post</div>
+                            </div>                            
                         </div>
                     </div>
-                    <div class="post-body w-full p-3 flex justify-center">
-                        <a href="cover.jpg" target="_blank">
-                            <img src="cover.jpg" alt="Post" class="w-100 rounded-xl">
+                    <div class="post-body w-full p-3 space-y-2">
+                        <p>Follow me</p>
+                        <a href="img/cover.jpg" target="_blank" class="flex justify-center">
+                            <img src="img/cover.jpg" alt="Post" class="w-100 rounded-xl">
                         </a>
                     </div>
                     <div class="post-footer flex justify-between px-3">
@@ -178,10 +180,11 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="post p-3 border-b border-gray-600">
                     <div class="post-header flex gap-3 px-3">
                         <div class="img w-12 h-10 rounded-full m-2">
-                            <img src="cover.jpg" alt="Profile" class="rounded-full w-full h-full">
+                            <img src="img/cover.jpg" alt="Profile" class="rounded-full w-full h-full">
                         </div>
                         <div class="w-full">
                             <div class="flex justify-between">
@@ -194,13 +197,13 @@
                                 <div class="setting cursor-pointer">
                                     <span class="material-symbols-outlined">more_horiz</span>
                                 </div>
-                            </div>
-                            <div class="text-gray-400">This is a test post</div>
+                            </div>                            
                         </div>
                     </div>
-                    <div class="post-body w-full p-3 flex justify-center">
-                        <a href="cover.jpg" target="_blank">
-                            <img src="cover.jpg" alt="Post" class="w-100 rounded-xl">
+                    <div class="post-body w-full p-3 space-y-2">
+                        <p>Fun With Foods</p>
+                        <a href="img/cover.jpg" target="_blank" class="flex justify-center">
+                            <img src="img/post-1.jpg" alt="Post" class="w-100 rounded-xl">
                         </a>
                     </div>
                     <div class="post-footer flex justify-between px-3">
@@ -227,10 +230,11 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="post p-3 border-b border-gray-600">
                     <div class="post-header flex gap-3 px-3">
                         <div class="img w-12 h-10 rounded-full m-2">
-                            <img src="cover.jpg" alt="Profile" class="rounded-full w-full h-full">
+                            <img src="img/cover.jpg" alt="Profile" class="rounded-full w-full h-full">
                         </div>
                         <div class="w-full">
                             <div class="flex justify-between">
@@ -244,12 +248,125 @@
                                     <span class="material-symbols-outlined">more_horiz</span>
                                 </div>
                             </div>
-                            <div class="text-gray-400">This is a test post</div>
+                            
                         </div>
                     </div>
                     <div class="post-body w-full p-3 flex justify-center">
-                        <a href="cover.jpg" target="_blank">
-                            <img src="cover.jpg" alt="Post" class="w-100 rounded-xl">
+                        <p>
+                            Three SQL Database Admins walked into a NoSQL bar. A little while later they walked out because they couldn’t find a table.
+                        </p>
+                    </div>
+                    <div class="post-footer flex justify-between px-3">
+                        <div class="flex gap-4">
+                            <div class="text-gray-400 cursor-pointer">
+                                <span class="material-symbols-outlined text-lg!">chat_bubble_outline</span> 
+                                2
+                            </div>
+                            <div class="text-gray-400 cursor-pointer">
+                                <span class="material-symbols-outlined text-lg!">repeat</span> 
+                                2
+                            </div>
+                            <div class="text-gray-400 cursor-pointer">
+                                <span class="material-symbols-outlined text-lg!">favorite_border</span> 
+                                2
+                            </div>
+                            <div class="text-gray-400 cursor-pointer">
+                                <span class="material-symbols-outlined text-lg!">share</span> 
+                                2
+                            </div>
+                        </div>
+                        <div class="text-gray-400 cursor-pointer">
+                            <span class="material-symbols-outlined text-lg!">bookmark_border</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post p-3 border-b border-gray-600">
+                    <div class="post-header flex gap-3 px-3">
+                        <div class="img w-12 h-10 rounded-full m-2">
+                            <img src="img/cover.jpg" alt="Profile" class="rounded-full w-full h-full">
+                        </div>
+                        <div class="w-full">
+                            <div class="flex justify-between">
+                                <div class="flex gap-2">
+                                    <div class="font-bold hover:underline hover:cursor-pointer">Areeb</div>
+                                    <div class="text-gray-400 hover:underline hover:cursor-pointer">@areeb</div>
+                                    <div class="text-gray-400">·</div>
+                                    <div class="text-gray-400">2h</div>
+                                </div>
+                                <div class="setting cursor-pointer">
+                                    <span class="material-symbols-outlined">more_horiz</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="post-body w-full p-3 flex justify-center">
+                        <p>
+                            The XML processor was having a rough day. His friend came by and gave him some words of encouragement — “This too shall parse”.
+                            <br>
+                            “Knock, knock.”<br>
+                            “Who’s there?”<br>
+                            very long pause….<br>
+                            “Java.”<br>
+
+                            “Knock knock!”<br>
+                            “Who is there?”<br>
+                            “Yah!”<br>
+                            “Yah, who?”<br>
+                            “No not Yahoo, Google.”<br>
+                            <br>
+                            All programmers are playwrights, and all computers are lousy actors.
+                        </p>
+                    </div>
+                    <div class="post-footer flex justify-between px-3">
+                        <div class="flex gap-4">
+                            <div class="text-gray-400 cursor-pointer">
+                                <span class="material-symbols-outlined text-lg!">chat_bubble_outline</span> 
+                                2
+                            </div>
+                            <div class="text-gray-400 cursor-pointer">
+                                <span class="material-symbols-outlined text-lg!">repeat</span> 
+                                2
+                            </div>
+                            <div class="text-gray-400 cursor-pointer">
+                                <span class="material-symbols-outlined text-lg!">favorite_border</span> 
+                                2
+                            </div>
+                            <div class="text-gray-400 cursor-pointer">
+                                <span class="material-symbols-outlined text-lg!">share</span> 
+                                2
+                            </div>
+                        </div>
+                        <div class="text-gray-400 cursor-pointer">
+                            <span class="material-symbols-outlined text-lg!">bookmark_border</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post p-3 border-b border-gray-600">
+                    <div class="post-header flex gap-3 px-3">
+                        <div class="img w-12 h-10 rounded-full m-2">
+                            <img src="img/cover.jpg" alt="Profile" class="rounded-full w-full h-full">
+                        </div>
+                        <div class="w-full">
+                            <div class="flex justify-between">
+                                <div class="flex gap-2">
+                                    <div class="font-bold hover:underline hover:cursor-pointer">Areeb</div>
+                                    <div class="text-gray-400 hover:underline hover:cursor-pointer">@areeb</div>
+                                    <div class="text-gray-400">·</div>
+                                    <div class="text-gray-400">2h</div>
+                                </div>
+                                <div class="setting cursor-pointer">
+                                    <span class="material-symbols-outlined">more_horiz</span>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="post-body w-full p-3 space-y-2">
+                        <p>Update</p>
+                        <a href="img/cover.jpg" target="_blank" class="flex justify-center">
+                            <img src="img/post-2.jpg" alt="Post" class="w-100 rounded-xl">
                         </a>
                     </div>
                     <div class="post-footer flex justify-between px-3">
@@ -307,7 +424,7 @@
                         <div class="text-sm lg:text-base font-bold cursor-pointer p-2 flex items-center justify-between hover:bg-gray-800 rounded-full">
                             <div class="left flex items-center gap-2"> 
                                 <div class="profile-img w-10 h-10">
-                                    <img src="cover.jpg" alt="Profile" class="w-full h-full rounded-full" />
+                                    <img src="img/cover.jpg" alt="Profile" class="w-full h-full rounded-full" />
                                 </div>
                                 <div class="profile-name">
                                     <div class="font-bold">Areeba</div>
@@ -322,6 +439,16 @@
                         
                     </div>
                     <div class="mt-3 px-3 text-xs lg:text-sm hover:underline cursor-pointer text-blue-600">Show More</div>
+                </div>
+
+                <div class="terms text-[10px] text-gray-600 w-full lg:w-[80%] px-1">
+                    <span class="hover:underline cursor-pointer mr-2">Terms of Service</span>
+                    <span class="hover:underline cursor-pointer mr-2">Privacy Policy</span>
+                    <span class="hover:underline cursor-pointer mr-2">Cookie Policy</span>
+                    <span class="hover:underline cursor-pointer mr-2">Accessibility</span>
+                    <span class="hover:underline cursor-pointer mr-2">Ads info</span>
+                    <span class="hover:underline cursor-pointer mr-2">More</span>
+                    <span class="hover:underline cursor-pointer mr-2">© 2024 X Corp.</span>
                 </div>
             </div>
         </div>
